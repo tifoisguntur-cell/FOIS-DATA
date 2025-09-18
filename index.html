@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operating Department</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('111.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      text-align: center;
+    }
+
+    /* Headings */
+    .heading1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 45px;
+      font-weight: bold;
+      text-transform: none;
+text-shadow: 3px 3px 5px WHITE;
+
+      color: #002366;        /* Navy Blue */
+      margin: 10px 0 0px 0;
+      letter-spacing: 1px;
+    }
+
+    .heading2 {
+      font-family: 'Bookman Old Style', serif;
+      font-size: 65px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #FFD700;
+      -webkit-text-stroke: 2px black;
+text-shadow: 5px 5px 5px blue; 
+      letter-spacing: 2px;
+    
+    }
+
+    .heading3 {
+      font-family: 'Playfair Display', serif;   
+      font-size:35px;
+      font-weight: bold;
+      text-transform: uppercase;
+
+text-shadow: 3px 3px 5px YELLOW;
+      color:WHITE ;/* #FFFFE0;  #17a2b8;*/
+      margin: 0 0 00px 0;
+    }
+
+    /* Passport container (photo + caption) */
+    .passport-container {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      text-align: center;
+    }
+
+    .passport {
+      width: 150px;
+      height: 170px;
+      border: 2px solid black;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+
+   
+
+    /* New logo/photo in top left */
+    .logo {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+
+    }
+
+    /* Button grid */
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 15px;
+      row-gap: 30px;
+      justify-items: center;
+      margin: 120px auto 50px auto;
+      max-width:90%;
+ margin:40px 20 20px 40;
+    }
+
+
+
+
+
+
+    button {
+      width: 200px;
+      height: 60px;
+      font-size: 20px;
+font-family: 'Playfair Display', serif;
+      font-weight: Bold;
+      border: none;
+      
+      border-radius: 4px;
+      cursor: pointer;
+      color: BLACK;
+      transition: transform 0.5s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    /* Different colors for buttons */
+    .btn1 { background: #66b2ff; }   /* Light Blue */
+.btn2 { background: #71d48b; }   /* Light Green */
+.btn3 { background: #ffe380; color: black; } /* Light Yellow */
+.btn4 { background: #f28b94; }   /* Light Red/Coral */
+.btn5 { background: #6ed6e0; }   /* Light Cyan */
+.btn6 { background: #b399e6; }   /* Light Purple */
+
+ /* Divider line */
+    .divider {
+      margin: 00px auto 10px auto;
+      width: 20%;
+      border-top: 2px solid black;
+    }
+ .scroller-wrap{
+      width: 100%;
+      overflow: hidden;
+     /* background: rgba(0,0,0,0.6);  change background if needed */
+      padding: 10px 0;
+      box-sizing: border-box;
+    }
+
+    /* The moving text */
+    .scroller {
+      display: inline-block;
+      white-space: nowrap;
+      will-change: transform;
+      /* animation: left-to-right <duration> linear infinite; */
+      animation: left-to-right 12s linear infinite;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      font-size: 1.6rem;             /* adjust size */
+      font-weight: 600;
+      color: #fff;                   /* text color */
+      padding-left: 100%;            /* start off-screen to the right */
+    }
+
+    /* Pause on hover (desktop) or touch-hold (mobile browsers that support it) */
+    .scroller-wrap:hover .scroller,
+    .scroller-wrap:active .scroller {
+      animation-play-state: paused;
+      cursor: pointer;
+    }
+
+    /* Keyframes — move from right to left */
+    @keyframes left-to-right {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Responsive tweak */
+    @media (max-width:600px){
+      .scroller { font-size: 1.1rem; animation-duration: 10s; }
+    }
+
+
+  </style>
+</head>
+<body>
+  <!-- Left corner image -->
+  <img src="L2.jpeg" alt="Logo" class="logo">
+
+  <!-- Right corner passport photo with caption -->
+  <div class="passport-container">
+    <img src="R1.jpeg" alt="Passport Photo" class="passport">
+   
+  </div>
+
+  <!-- Headings -->
+  <div class="heading1">OPERATING DEPARTMENT </div>
+<div class="heading2">FOIS DATA</div>
+  <div class="heading3">GUNTUR DIVISION</div>
+
+<body style="margin:0; text-align:center;">
+
+  
+  
+  </div>
+
+
+  <!-- Buttons Grid -->
+   <div class="button-container">
+     <button class="btn1" onclick="window.open('https://docs.google.com/spreadsheets/d/1evokvOjkjn6xXxEpDnBYE8pV5eMDP9OhIvDvblwDZ-0/edit?gid=772668189#gid=772668189')">INTERCHANGE FORECAST</button>
+     <button class="btn2" onclick="window.open('https://docs.google.com/spreadsheets/d/1vmTzfHljsNRFD10EK4mkId5ZTY-BozEuvTYq4-w-_AA/edit?gid=1757705846#gid=1757705846')">ZONAL INTERCHANGE</button>
+     <button class="btn5" onclick="window.open('https://docs.google.com/spreadsheets/d/1BGm512W3VZ5LAyuIWdK5wBpXlWAHDIkfw3vp3a8MPNs/edit?gid=0#gid=0')">DATA SUMMARY</button>
+     <button class="btn6" onclick="window.open('https://docs.google.com/spreadsheets/d/1BGm512W3VZ5LAyuIWdK5wBpXlWAHDIkfw3vp3a8MPNs/edit?gid=228669151#gid=228669151')">LONG HAULS</button>
+     <button class="btn3" onclick="window.open('https://docs.google.com/spreadsheets/d/1BGm512W3VZ5LAyuIWdK5wBpXlWAHDIkfw3vp3a8MPNs/edit?gid=975322577#gid=975322577')"> CRACK SPL.</button>
+      <button class="btn4" onclick="window.open('https://docs.google.com/spreadsheets/d/1BGm512W3VZ5LAyuIWdK5wBpXlWAHDIkfw3vp3a8MPNs/edit?gid=1335321478#gid=1335321478')">Sr.DOM YTPV POSITION</button>
+
+     <button class="btn2" onclick="window.open('https://docs.google.com/spreadsheets/d/1BGm512W3VZ5LAyuIWdK5wBpXlWAHDIkfw3vp3a8MPNs/edit?gid=1079231296#gid=1079231296')">WITH OUT GUARD AND B/V</button>
+    <button class="btn5" onclick="window.open('https://docs.google.com/spreadsheets/d/1BGm512W3VZ5LAyuIWdK5wBpXlWAHDIkfw3vp3a8MPNs/edit?gid=661800100#gid=661800100')">NEXT ENGINE B/V</button>
+     <button class="btn6" onclick="window.open('https://docs.google.com/spreadsheets/d/1BGm512W3VZ5LAyuIWdK5wBpXlWAHDIkfw3vp3a8MPNs/edit?gid=1320058970#gid=1320058970')">DAILY H/O & T/O</button>
+     <button class="btn3" onclick="window.open('https://docs.google.com/spreadsheets/d/1BGm512W3VZ5LAyuIWdK5wBpXlWAHDIkfw3vp3a8MPNs/edit?gid=1106921661#gid=1106921661')">TMR SCALE CHECK</button>
+     <button class="btn4" onclick="window.open('https://docs.google.com/spreadsheets/d/1BGm512W3VZ5LAyuIWdK5wBpXlWAHDIkfw3vp3a8MPNs/edit?gid=531659638#gid=531659638')">STABLE STOCK POSITION</button>
+     <button class="btn1" onclick="window.open('https://docs.google.com/spreadsheets/d/1BGm512W3VZ5LAyuIWdK5wBpXlWAHDIkfw3vp3a8MPNs/edit?gid=352679511#gid=352679511')">DAILY LOADING</button>
+     
+    <button class="btn5" onclick="window.open('https://docs.google.com/spreadsheets/d/1BGm512W3VZ5LAyuIWdK5wBpXlWAHDIkfw3vp3a8MPNs/edit?gid=1856878553#gid=1856878553')">DAILY UNLOADING</button>
+     <button class="btn6" onclick="window.open('https://docs.google.com/spreadsheets/d/1BGm512W3VZ5LAyuIWdK5wBpXlWAHDIkfw3vp3a8MPNs/edit?gid=2044382274#gid=2044382274')">TI FORMATE W/O TMR</button>
+<button class="btn4" onclick="window.open('https://docs.google.com/spreadsheets/d/19ejKXqrgehsLubCpih0N8jXGc6oTIsxVCXSG9HzwdOM/edit?gid=870647677#gid=870647677')">STN CONTACT NUMBERS</button>     
+<button class="btn3" onclick="window.open('file:///C:/Users/HP/Desktop/OPERATING%20SITE%20AS%20ON%2017-09-2025%20FINAL/OPERATING.HTML')">OPERATING DATA</button>
+     
+     
+
+	
+  </div>
+</body>
+</html>
